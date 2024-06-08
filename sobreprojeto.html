@@ -69,39 +69,28 @@
                 <div class="cards">
                   <div class="card">
                       <div class="card-content">
-                          <div class="number">1217</div>
-                          <div class="card-name">Students</div>
-                      </div>
-                      <div class="icon-box">
-                          <i class="fas fa-user-graduate"></i>
+                          <div class="number">127</div>
+                          <div class="card-name">Pequena</div>
+                      </div>        
+                  </div>
+                  <div class="card">
+                      <div class="card-content">
+                          <div class="number">142</div>
+                          <div class="card-name">Média</div>
                       </div>
                   </div>
                   <div class="card">
                       <div class="card-content">
-                          <div class="number">42</div>
-                          <div class="card-name">Teachers</div>
-                      </div>
-                      <div class="icon-box">
-                          <i class="fas fa-chalkboard-teacher"></i>
+                          <div class="number">168</div>
+                          <div class="card-name">Grande</div>
                       </div>
                   </div>
                   <div class="card">
                       <div class="card-content">
-                          <div class="number">68</div>
-                          <div class="card-name">Employees</div>
+                          <div class="number">437</div>
+                          <div class="card-name">Total</div>
                       </div>
-                      <div class="icon-box">
-                          <i class="fas fa-users"></i>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="card-content">
-                          <div class="number">$4500</div>
-                          <div class="card-name">Earnings</div>
-                      </div>
-                      <div class="icon-box">
-                          <i class="fas fa-dollar-sign"></i>
-                      </div>
+                      
                   </div>
                 </div>
                 
@@ -130,7 +119,7 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Linha</th>
+                                            <th>Dia</th>
                                             <th>Quantidade Produzida</th>
                                             <th>Meta de Produção</th>
                                             <th>Porcentagem da Meta Atingida</th>
@@ -218,9 +207,9 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Pistão</td>
+                                        <td>Pequena</td>
                                         <td>PIST001</td>
-                                        <td>120</td>
+                                        <td>127</td>
                                         <td>Prateleira A1</td>
                                         <td>35,00</td>
                                         <td>80,00</td>
@@ -228,9 +217,9 @@
                                         <td>Suficiente</td>
                                     </tr>
                                     <tr>
-                                        <td>Vela de ignição</td>
+                                        <td>Média</td>
                                         <td>VIGN002</td>
-                                        <td>90</td>
+                                        <td>142</td>
                                         <td>Estante B2</td>
                                         <td>25,00</td>
                                         <td>60,00</td>
@@ -238,35 +227,16 @@
                                         <td>Baixo</td>
                                     </tr>
                                     <tr>
-                                        <td>Filtro de óleo</td>
+                                        <td>Grande</td>
                                         <td>FILT003</td>
-                                        <td>150</td>
+                                        <td>168</td>
                                         <td>Prateleira C1</td>
                                         <td>20,00</td>
                                         <td>55,00</td>
                                         <td>Fiat</td>
                                         <td>Suficiente</td>
                                     </tr>
-                                    <tr>
-                                        <td>Correia dentada</td>
-                                        <td>CORR004</td>
-                                        <td>180</td>
-                                        <td>Estante A3</td>
-                                        <td>30,00</td>
-                                        <td>70,00</td>
-                                        <td>3M</td>
-                                        <td>Suficiente</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Radiador</td>
-                                        <td>RAD005</td>
-                                        <td>50</td>
-                                        <td>Prateleira D2</td>
-                                        <td>40,00</td>
-                                        <td>90,00</td>
-                                        <td>Honda</td>
-                                        <td>Crítico</td>
-                                    </tr>
+                                  
                                 </tbody>
                             </table>
                         </div>
@@ -303,10 +273,10 @@
                     var myChart = new Chart(ctx, {
                         type: "bar",
                         data: {
-                            labels: ["Linha 1", "Linha 2", "Linha 3", "Linha 4", "Linha 5", "Linha 6"],
+                            labels: ["Pequena", "Média", "Grande", "Total"],
                             datasets: [{
                                 label: "Quantidade de peças produzidas",
-                                data: [12, 19, 3, 16, 10, 14],
+                                data: [127, 142, 168, 437],
                                 backgroundColor: [
                                     "rgba(255, 99, 132, 0.2)",
                                     "rgba(54, 162, 235, 0.2)",
